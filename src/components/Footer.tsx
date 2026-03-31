@@ -6,8 +6,12 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="bg-blue-600 p-2 rounded-xl">
-                <Network className="w-6 h-6 text-white" strokeWidth={2.5} />
+              <div className=" p-2 rounded-xl">
+               <img
+                  src="/images/logo.png"
+                  alt=""
+                  className="relative w-16 h-16 object-cover rounded-xl"
+                />
               </div>
               <span className="text-xl font-bold text-white">Kyronet</span>
             </div>
@@ -51,7 +55,7 @@ export default function Footer() {
 
         <div className="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
           <p>© 2025 Kyronet. Tous droits réservés.</p>
-          <p>Fait avec passion à Paris 🇫🇷</p>
+          <p>Fait avec passion à Djibouti </p>
         </div>
       </div>
     </footer>

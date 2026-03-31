@@ -23,10 +23,10 @@ export default function Contact() {
                 </div>
                 <div>
                   <div className="font-semibold mb-1">Téléphone</div>
-                  <a href="tel:+33184883310" className="text-slate-300 hover:text-white transition-colors">
-                    +33 1 84 88 33 10
+                  <a href="tel:+25377309407" className="text-slate-300 hover:text-white transition-colors">
+                    +25377309407
                   </a>
-                  <p className="text-sm text-slate-400 mt-1">Lun-Ven 9h-18h</p>
+                  <p className="text-sm text-slate-400 mt-1">Dim-Jeu 8h-18h</p>
                 </div>
               </div>
 
@@ -37,7 +37,7 @@ export default function Contact() {
                 <div>
                   <div className="font-semibold mb-1">Email</div>
                   <a href="mailto:contact@kyronet.fr" className="text-slate-300 hover:text-white transition-colors">
-                    contact@kyronet.fr
+                    contact@kyronet.net
                   </a>
                   <p className="text-sm text-slate-400 mt-1">Réponse sous 24h</p>
                 </div>
@@ -50,8 +50,8 @@ export default function Contact() {
                 <div>
                   <div className="font-semibold mb-1">Adresse</div>
                   <p className="text-slate-300">
-                    15 rue du Faubourg<br />
-                    75001 Paris, France
+                    Q6<br />
+                    Djibouti ville
                   </p>
                 </div>
               </div>

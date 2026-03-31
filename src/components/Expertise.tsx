@@ -33,7 +33,7 @@ const EXPERTISE_DATA = [
       'Firewalls nouvelle génération (NGFW)',
       'Load balancing et redondance'
     ],
-    image: '/images/infra.png',
+    image: '/images/reseau.png',
     imageAlt: 'Architecture réseau professionnelle',
     reverse: false,
   },

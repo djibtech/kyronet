@@ -10,45 +10,21 @@ const testimonials = [
     image: '👩‍💼'
   },
   {
-    name: 'Pierre Martin',
-    role: 'CTO, InnovSystems',
-    company: 'InnovSystems',
+    name: 'Ayanleh',
+    role: 'IT Ingenieur',
+    company: 'Academie Arabe',
     content: 'L\'équipe de Kyronet a déployé une solution de sauvegarde immutable qui nous donne une tranquillité d\'esprit totale. Leur support 24/7 est exceptionnel.',
     rating: 5,
     image: '👨‍💼'
   },
   {
-    name: 'Sophie Laurent',
-    role: 'Directrice IT, SecureBank',
+    name: 'Mahad Osman',
+    role: 'IT, Banque Centrale de Djibouti',
     company: 'SecureBank',
     content: 'La migration vers notre nouvelle infrastructure réseau s\'est faite sans aucune interruption de service. Le professionnalisme de Kyronet est remarquable.',
     rating: 5,
     image: '👩‍💻'
   },
-  {
-    name: 'Jean Rousseau',
-    role: 'CEO, CloudFirst SAS',
-    company: 'CloudFirst',
-    content: 'Kyronet ne se contente pas d\'installer des serveurs, ils développent des solutions d\'automatisation qui nous font gagner un temps précieux. Leur maîtrise de Python est impressionnante.',
-    rating: 5,
-    image: '👨‍💻'
-  },
-  {
-    name: 'Isabelle Moreau',
-    role: 'Responsable Infrastructure, DataCorp',
-    company: 'DataCorp',
-    content: 'Depuis que Kyronet gère notre supervision, nous anticipons les problèmes avant qu\'ils n\'impactent nos utilisateurs. La disponibilité de 99.98% n\'est pas un mythe.',
-    rating: 5,
-    image: '👩'
-  },
-  {
-    name: 'Thomas Bernard',
-    role: 'Directeur Technique, MediaPlus',
-    company: 'MediaPlus',
-    content: 'L\'approche hybride cloud de Kyronet nous a permis d\'optimiser nos coûts tout en gardant le contrôle sur nos données sensibles. C\'est exactement ce dont nous avions besoin.',
-    rating: 5,
-    image: '👨'
-  }
 ];
 
 export default function Testimonials() {
