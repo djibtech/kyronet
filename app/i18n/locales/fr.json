@@ -1,0 +1,497 @@
+{
+  "common": {
+    "errorOops": "Oups !",
+    "error404": "404",
+    "errorGeneric": "Erreur",
+    "errorUnexpected": "Une erreur inattendue s'est produite.",
+    "errorNotFound": "La page demandée est introuvable."
+  },
+  "home": {
+    "metaTitle": "Kyronet - Votre partenaire IT",
+    "metaDescription": "Kyronet est votre partenaire IT pour concevoir des infrastructures performantes, sécurisées et évolutives."
+  },
+  "navigation": {
+    "about": "À propos de nous",
+    "services": "Services",
+    "projects": "Projets",
+    "process": "Processus",
+    "clients": "Clients",
+    "testimonials": "Témoignages",
+    "faq": "FAQ",
+    "cta": "Nous contacter",
+    "logoAlt": "Icône Kyronet",
+    "languageGroup": "Langue du site",
+    "langFr": "FR",
+    "langEn": "EN"
+  },
+  "hero": {
+    "title": "Votre infrastructure IT, notre expertise",
+    "subtitle": "Nous concevons, déployons et gérons des infrastructures informatiques sur mesure pour propulser votre entreprise vers le futur.",
+    "videoUnsupported": "Votre navigateur ne prend pas en charge la balise vidéo.",
+    "discover": "Découvrir",
+    "ourServices": "Nos Services"
+  },
+  "about": {
+    "titleLine1": "Nous construisons",
+    "titleHighlight": "des infrastructures IT",
+    "titleSuffix": "performantes.",
+    "p1": "Nous concevons et gérons des écosystèmes informatiques modernes incluant les réseaux, la virtualisation et les infrastructures cloud sécurisées pour les entreprises exigeantes en performance et en fiabilité.",
+    "p2": "De l'architecture réseau à la reprise d'activité, nous garantissons la continuité, la scalabilité et la sécurité à chaque niveau de votre système d'information.",
+    "statProjects": "Projets",
+    "statMonitoring": "Supervision",
+    "statUptime": "Disponibilité",
+    "visualEyebrow": "Infrastructure",
+    "visualTitleLine1": "Conçue avec",
+    "visualTitleLine2": "précision"
+  },
+  "services": {
+    "eyebrow": "Services",
+    "titleLine1": "Expertise",
+    "titleLine2": "IT complète",
+    "intro": "Une approche structurée pour concevoir et gérer des infrastructures modernes.",
+    "items": {
+      "office": {
+        "title": "Parc bureautique",
+        "description": "Gestion complète de vos équipements informatiques, déploiement et supervision continue."
+      },
+      "managed": {
+        "title": "Infogérance & support",
+        "description": "Maintenance proactive et assistance technique pour garantir la continuité de vos services."
+      },
+      "netsec": {
+        "title": "Réseaux & cybersécurité",
+        "description": "Protection avancée des infrastructures et sécurisation des systèmes critiques."
+      },
+      "cloud": {
+        "title": "Virtualisation & cloud",
+        "description": "Migration et gestion d'environnements cloud performants et évolutifs."
+      },
+      "backup": {
+        "title": "Sauvegarde & PRA",
+        "description": "Stratégies de backup et reprise d'activité rapide en cas d'incident."
+      },
+      "devdb": {
+        "title": "Développement & bases de données",
+        "description": "Création d'applications sur mesure et gestion optimisée des données métiers."
+      },
+      "training": {
+        "title": "Formation & accompagnement",
+        "description": "Montée en compétence des équipes et accompagnement opérationnel."
+      }
+    }
+  },
+  "projects": {
+    "eyebrow": "Projets",
+    "titleLine1": "Réalisations",
+    "titleLine2": "sélectionnées",
+    "category": "Développement",
+    "viewProject": "Voir le projet",
+    "hoom": {
+      "title": "HOOM",
+      "year": "2025",
+      "description": "HOOM est une plateforme éducative innovante conçue pour accompagner les élèves et étudiants dans leurs révisions grâce à des quiz interactifs, annales, résumés de cours et une assistance IA intelligente."
+    },
+    "hotelpro": {
+      "title": "HotelPro",
+      "year": "2026",
+      "description": "HotelPro est une plateforme de gestion hôtelière complète permettant de gérer réservations, chambres, facturation, restaurant et comptabilité."
+    },
+    "restaurant": {
+      "title": "RestoPro",
+      "year": "2026",
+      "description": "RestoPro est une solution complète de gestion de restaurant : tableau de bord, prise de commande, encaissement, menu digital avec carte QR code, stock, recettes, achats fournisseurs, clients à crédit et comptabilité."
+    }
+  },
+  "hotelproPage": {
+    "back": "Retour à l'accueil",
+    "title": "HotelPro",
+    "subtitle": "Gestion hôtelière & restaurant, unifiée.",
+    "description": "HotelPro est une plateforme complète de gestion hôtelière et de restauration : chambres, réservations, point de vente, stock et comptabilité réunis dans un seul outil, avec des rôles et permissions configurables pour chaque équipe.",
+    "stats": [
+      { "value": "6", "label": "Modules métier" },
+      { "value": "20+", "label": "Écrans" },
+      { "value": "100%", "label": "Rôles configurables" }
+    ],
+    "modulesTitle": "Une architecture pensée par métier",
+    "modulesSubtitle": "Chaque équipe retrouve exactement les outils dont elle a besoin, ni plus ni moins.",
+    "modules": [
+      {
+        "id": "hebergement",
+        "title": "Hébergement",
+        "description": "Le cœur de l'hôtel : chambres, réservations et séjours suivis en temps réel.",
+        "features": [
+          "Tableau de bord & KPIs",
+          "Chambres & disponibilité",
+          "Check-in / Check-out",
+          "Réservations & arrivées du jour",
+          "Séjours, extras & historique"
+        ]
+      },
+      {
+        "id": "restaurant",
+        "title": "Restaurant",
+        "description": "Un point de vente complet, relié à la carte publique accessible par QR code.",
+        "features": [
+          "Prise de commande & tables",
+          "Carte & catégories de menu",
+          "QR code + carte publique",
+          "Encaissement & tickets",
+          "Room service dédié"
+        ]
+      },
+      {
+        "id": "stock",
+        "title": "Stock & Achats",
+        "description": "Ingrédients, fournisseurs et bons de commande suivis pour ne jamais tomber en rupture.",
+        "features": [
+          "Catégories de stock",
+          "Ingrédients & seuils d'alerte",
+          "Fournisseurs",
+          "Bons de commande"
+        ]
+      },
+      {
+        "id": "finance",
+        "title": "Finance & Comptabilité",
+        "description": "Une comptabilité intégrée, du ticket de caisse au rapport mensuel.",
+        "features": [
+          "Journal de caisse",
+          "Dépenses & frais divers",
+          "Factures fournisseurs",
+          "Tableau de bord comptable",
+          "Rapports"
+        ]
+      },
+      {
+        "id": "admin",
+        "title": "Administration",
+        "description": "Des rôles et permissions configurables sans toucher au code.",
+        "features": [
+          "Utilisateurs",
+          "Rôles & permissions (page.*)",
+          "Journal d'audit"
+        ]
+      },
+      {
+        "id": "configuration",
+        "title": "Configuration",
+        "description": "Les réglages qui adaptent l'application à chaque établissement.",
+        "features": [
+          "Méthodes de paiement",
+          "Paramètres généraux"
+        ]
+      }
+    ],
+    "galleryTitle": "Aperçu en images",
+    "gallerySubtitle": "Captures d'écran réelles de l'application.",
+    "gallery": [
+      { "file": "hotelpro-dashboard.png", "caption": "Tableau de bord" },
+      { "file": "hotelpro-rooms.png", "caption": "Chambres" },
+      { "file": "hotelpro-reservations.png", "caption": "Réservations" },
+      { "file": "hotelpro-checkin.png", "caption": "Check-in" },
+      { "file": "hotelpro-restaurant-hub.png", "caption": "Point de vente restaurant" },
+      { "file": "hotelpro-qrcode.png", "caption": "QR code menu" },
+      { "file": "hotelpro-comptabilite.png", "caption": "Comptabilité" },
+      { "file": "hotelpro-commande.png", "caption": "Bon de commande" }
+    ],
+    "ctaTitle": "Un projet similaire en tête ?",
+    "ctaButton": "Discutons-en"
+  },
+  "restaurantPage": {
+    "back": "Retour à l'accueil",
+    "title": "RestoPro",
+    "subtitle": "La gestion de restaurant, simplifiée.",
+    "description": "RestoPro est une plateforme complète de gestion de restaurant : tableau de bord, prise de commande, encaissement, menu et formules, stock et recettes, achats fournisseurs, clients à crédit et comptabilité réunis dans un seul outil, avec une carte publique accessible par QR code et des rôles configurables pour chaque caissier.",
+    "stats": [
+      { "value": "8", "label": "Modules métier" },
+      { "value": "15+", "label": "Écrans" },
+      { "value": "100%", "label": "Rôles configurables" }
+    ],
+    "modulesTitle": "Une architecture pensée pour la restauration",
+    "modulesSubtitle": "Du tableau de bord à la comptabilité, chaque équipe a exactement les outils qu'il lui faut.",
+    "modulesLabel": "Modules",
+    "modules": [
+      {
+        "id": "dashboard",
+        "title": "Tableau de bord",
+        "description": "Une vue d'ensemble en temps réel de l'activité du restaurant, du chiffre d'affaires aux plats les plus vendus.",
+        "features": [
+          "KPIs en temps réel",
+          "Graphique des ventes (jour / semaine / mois / année / période personnalisée)",
+          "Top des plats vendus"
+        ]
+      },
+      {
+        "id": "commandes",
+        "title": "Commandes & Caisse",
+        "description": "Prise de commande rapide, encaissement et tickets imprimés automatiquement.",
+        "features": [
+          "Prise de commande & commandes en cours",
+          "Encaissement multi-moyens de paiement",
+          "Ticket client + bon cuisine",
+          "Historique des commandes",
+          "Ma caisse : session & statistiques"
+        ]
+      },
+      {
+        "id": "menu",
+        "title": "Menu & Formules",
+        "description": "Gestion du menu, des catégories et des formules, avec carte publique par QR code.",
+        "features": [
+          "Plats & disponibilité",
+          "Catégories & types",
+          "Formules / menus combinés",
+          "Carte publique accessible par QR code"
+        ]
+      },
+      {
+        "id": "stock",
+        "title": "Stock & Recettes",
+        "description": "Ingrédients, mouvements de stock et coûts de recettes suivis en temps réel.",
+        "features": [
+          "Ingrédients & seuils d'alerte",
+          "Mouvements de stock",
+          "Recettes & coût matière",
+          "Sorties multiples"
+        ]
+      },
+      {
+        "id": "achats",
+        "title": "Achats & Fournisseurs",
+        "description": "Fournisseurs, bons de commande et factures suivis de la commande au paiement.",
+        "features": [
+          "Fournisseurs",
+          "Bons de commande",
+          "Réception de commande",
+          "Factures fournisseurs"
+        ]
+      },
+      {
+        "id": "clients",
+        "title": "Clients & Crédit",
+        "description": "Suivi des clients à crédit, de la facturation au règlement, pour ne perdre aucune créance.",
+        "features": [
+          "Fiche client & historique",
+          "Cycle de facturation (hebdomadaire, mensuel, comptant)",
+          "Solde impayé & relances",
+          "Règlements & historique des paiements"
+        ]
+      },
+      {
+        "id": "finance",
+        "title": "Finance & Comptabilité",
+        "description": "Une comptabilité intégrée, des dépenses au rapport mensuel.",
+        "features": [
+          "Dépenses & validation",
+          "Rapport mensuel",
+          "Comptabilité intégrée"
+        ]
+      },
+      {
+        "id": "admin",
+        "title": "Administration",
+        "description": "Caissiers, rôles et permissions, ainsi que les réglages propres à chaque restaurant.",
+        "features": [
+          "Gestion des caissiers",
+          "Rôles & permissions par section",
+          "Logo & identité du restaurant",
+          "Taux de TVA",
+          "Impression ticket ESC/POS",
+          "Opérateurs Mobile Money"
+        ]
+      }
+    ],
+    "galleryLabel": "Galerie",
+    "galleryTitle": "Aperçu en images",
+    "gallerySubtitle": "Captures d'écran réelles de l'application.",
+    "gallery": [
+      { "file": "restopro-dashboard.png", "caption": "Tableau de bord" },
+      { "file": "restopro-commande.png", "caption": "Prise de commande" },
+      { "file": "restopro-caisse.png", "caption": "Encaissement" },
+      { "file": "restopro-menu.png", "caption": "Menu & plats" },
+      { "file": "restopro-qrcode.png", "caption": "Carte publique QR code" },
+      { "file": "restopro-stock.png", "caption": "Stock & ingrédients" },
+      { "file": "restopro-achats.png", "caption": "Achats & fournisseurs" },
+      { "file": "restopro-clients.png", "caption": "Clients & crédit" },
+      { "file": "restopro-comptabilite.png", "caption": "Comptabilité" },
+      { "file": "restopro-admin.png", "caption": "Administration" }
+    ],
+    "ctaTitle": "Un projet similaire en tête ?",
+    "ctaButton": "Discutons-en"
+  },
+  "clients": {
+    "eyebrow": "Nos clients",
+    "titleLine1": "Ils nous font",
+    "titleLine2": "confiance",
+    "subtitle": "Des institutions et organisations qui s'appuient sur notre expertise IT."
+  },
+  "testimonials": {
+    "eyebrow": "Témoignages",
+    "titleLine1": "Ce que disent",
+    "titleLine2": "nos clients",
+    "subtitle": "Des entreprises qui nous font confiance pour leurs infrastructures critiques.",
+    "items": [
+      {
+        "name": "Hamze Idriss",
+        "text": "Une expertise technique exceptionnelle. Leur approche a totalement transformé notre infrastructure IT."
+      },
+      {
+        "name": "Yacoub issa",
+        "text": "Fiabilité, performance et sécurité. L'équipe a livré une architecture robuste et scalable."
+      },
+      {
+        "name": "Asma Adaweh",
+        "text": "Un vrai partenaire stratégique. Ils comprennent parfaitement les enjeux business et techniques."
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "titleLine1": "Questions",
+    "titleLine2": "fréquentes",
+    "subtitle": "Tout ce que vous devez savoir sur nos services IT.",
+    "moreQuestion": "Vous avez une question spécifique ?",
+    "cta": "Nous contacter",
+    "items": [
+      {
+        "question": "Quels sont vos délais d'intervention ?",
+        "answer": "Nous assurons une prise en charge immédiate 24/7 avec un temps de réponse inférieur à 15 minutes pour les incidents critiques."
+      },
+      {
+        "question": "Proposez-vous un audit gratuit ?",
+        "answer": "Oui, nous réalisons un audit complet et gratuit de votre infrastructure avec un rapport détaillé et des recommandations concrètes."
+      },
+      {
+        "question": "Comment garantissez-vous la sécurité ?",
+        "answer": "Nous utilisons une architecture Zero Trust, des firewalls avancés, du chiffrement et une surveillance continue de tous les systèmes."
+      },
+      {
+        "question": "Travaillez-vous avec quelles technologies ?",
+        "answer": "VMware, Kubernetes, Cisco, Fortinet, AWS, Azure, ainsi que des solutions sur mesure en Python, PHP et Go."
+      },
+      {
+        "question": "Vos sauvegardes sont-elles sécurisées ?",
+        "answer": "Oui, nous appliquons la règle 3-2-1 avec des backups immutables et des tests de restauration réguliers."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "titleLine1": "Construisons",
+    "titleLine2": "votre système",
+    "intro": "Nous concevons des infrastructures IT performantes, sécurisées et évolutives pour les entreprises modernes.",
+    "phoneLabel": "Téléphone",
+    "phoneValue": "+253 77 30 94 07",
+    "emailLabel": "Email",
+    "emailValue": "sales@kyronet.net / support@kyronet.net",
+    "addressLabel": "Adresse",
+    "addressValue": "Djibouti-ville, Q6 , CLE",
+    "formTitle": "Demander un audit gratuit",
+    "placeholderName": "Nom complet",
+    "placeholderEmail": "Email professionnel",
+    "placeholderCompany": "Entreprise",
+    "placeholderMessage": "Votre besoin...",
+    "submit": "Envoyer",
+    "copyright": "© 2026 Kyronet. Tous droits réservés.",
+    "legal": "Mentions légales",
+    "privacy": "Confidentialité",
+    "terms": "CGV"
+  },
+  "stats": {
+    "items": [
+      { "value": "99.98%", "label": "Disponibilité garantie" },
+      { "value": "120+", "label": "Clients actifs" },
+      { "value": "15+", "label": "Années d'expertise" },
+      { "value": "24/7", "label": "Support disponible" }
+    ]
+  },
+  "expertise": {
+    "network": {
+      "badge": "Infrastructure Réseau",
+      "title": "Des réseaux performants et sécurisés",
+      "intro": "Nous concevons des architectures réseau modernes qui allient performance, sécurité et évolutivité pour accompagner votre croissance.",
+      "bullets": [
+        "Architecture LAN/WAN haute disponibilité",
+        "SD-WAN pour interconnexion multi-sites",
+        "Segmentation VLAN et Zero Trust",
+        "Wi-Fi professionnel et gestion centralisée",
+        "Firewalls nouvelle génération (NGFW)",
+        "Load balancing et redondance"
+      ]
+    },
+    "virtualization": {
+      "badge": "Virtualisation",
+      "title": "Optimisez vos ressources avec la virtualisation",
+      "intro": "Consolidez vos serveurs, améliorez votre agilité et réduisez vos coûts grâce à nos solutions de virtualisation avancées.",
+      "bullets": [
+        "VMware vSphere & ESXi pour entreprises",
+        "Microsoft Hyper-V et System Center",
+        "Proxmox VE pour infrastructures flexibles",
+        "Kubernetes et orchestration de containers",
+        "VDI (Virtual Desktop Infrastructure)",
+        "Haute disponibilité et disaster recovery"
+      ]
+    },
+    "backup": {
+      "badge": "Sauvegarde & Protection",
+      "title": "Vos données protégées en toute circonstance",
+      "intro": "Stratégies de sauvegarde immutable et plans de reprise d'activité pour garantir la continuité de vos opérations.",
+      "bullets": [
+        "Stratégie 3-2-1 (3 copies, 2 supports, 1 hors site)",
+        "Backup immutable contre ransomwares",
+        "Veeam Backup & Replication",
+        "Réplication temps réel et asynchrone",
+        "Tests automatiques de restauration",
+        "RPO/RTO optimisés selon vos besoins"
+      ]
+    },
+    "dev": {
+      "badge": "Développement & Automatisation",
+      "title": "Automatisez et optimisez vos processus IT",
+      "intro": "Nos développeurs créent des outils sur mesure pour automatiser vos tâches répétitives et interconnecter vos systèmes.",
+      "bullets": [
+        "Scripts Python pour automatisation",
+        "Applications web PHP personnalisées",
+        "APIs REST pour intégration systèmes",
+        "Infrastructure as Code (Terraform, Ansible)",
+        "Développement d'outils de migration",
+        "Dashboards et reporting personnalisés"
+      ]
+    }
+  },
+  "partenaire": {
+    "heading": "Nos Partenaires"
+  },
+  "process": {
+    "eyebrow": "Notre approche",
+    "titleLine1": "Une approche pensée pour",
+    "titleLine2": "durer",
+    "intro": "De l'analyse stratégique au suivi continu, chaque étape est conçue pour créer une infrastructure performante, fiable et évolutive.",
+    "stepLabel": "Étape {{num}}",
+    "steps": {
+      "audit": {
+        "title": "Audit & Analyse",
+        "description": "Nous évaluons votre infrastructure existante, identifions les points d'amélioration et définissons vos besoins.",
+        "duration": "1-2 semaines"
+      },
+      "design": {
+        "title": "Conception",
+        "description": "Notre équipe conçoit une architecture sur mesure, optimisée pour vos processus et vos objectifs métier.",
+        "duration": "2-3 semaines"
+      },
+      "deploy": {
+        "title": "Déploiement",
+        "description": "Mise en œuvre progressive de la solution avec tests rigoureux et formation de vos équipes.",
+        "duration": "4-8 semaines"
+      },
+      "support": {
+        "title": "Support continu",
+        "description": "Supervision 24/7, maintenance préventive et optimisation continue de votre infrastructure.",
+        "duration": "Illimité"
+      }
+    }
+  },
+  "footer": {
+    "copyright": "© {{year}} Kyronet. Tous droits réservés."
+  }
+}

@@ -1,0 +1,238 @@
+import { useEffect, useMemo, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router";
+import Hom from "../asset/Projet/Hom.png";
+import HotelPro from "../asset/Projet/HotelPro.png";
+import Restaurant from "../asset/Projet/Restaurant.png";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+
+const PROJECT_IDS = ["hoom", "hotelpro", "restaurant"] as const;
+
+const PROJECT_ASSETS: Record<
+  (typeof PROJECT_IDS)[number],
+  { image: string; lien?: string }
+> = {
+  hoom: { image: Hom, lien: "https://www.hoom.space/" },
+  hotelpro: { image: HotelPro, lien: "/hotelpro" },
+  restaurant: { image: Restaurant, lien: "/restaurant" },
+};
+
+function Project() {
+  const { t } = useTranslation();
+  const [current, setCurrent] = useState(0);
+  const timeoutRef = useRef<number | null>(null);
+
+  const projects = useMemo(
+    () =>
+      PROJECT_IDS.map((id) => ({
+        id,
+        image: PROJECT_ASSETS[id].image,
+        lien: PROJECT_ASSETS[id].lien,
+        title: t(`projects.${id}.title`),
+        year: t(`projects.${id}.year`),
+        description: t(`projects.${id}.description`),
+        category: t("projects.category"),
+      })),
+    [t],
+  );
+
+  const nextSlide = () => {
+    setCurrent((prev) => (prev + 1) % projects.length);
+  };
+
+  const prevSlide = () => {
+    setCurrent((prev) =>
+      prev === 0 ? projects.length - 1 : prev - 1
+    );
+  };
+
+  // AUTO SLIDE
+  useEffect(() => {
+    timeoutRef.current = window.setTimeout(() => {
+      setCurrent((prev) => (prev + 1) % PROJECT_IDS.length);
+    }, 6000);
+
+    return () => {
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    };
+  }, [current]);
+
+  return (
+    <section
+      id="projects"
+      className="relative py-32 bg-white text-black overflow-hidden"
+    >
+      {/* BACKGROUND */}
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute top-[-200px] left-[-200px] w-[500px] h-[500px] bg-black/5 rounded-full blur-[140px]" />
+        <div className="absolute bottom-[-200px] right-[-200px] w-[600px] h-[600px] bg-black/5 rounded-full blur-[160px]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-black/5 rounded-full blur-[200px]" />
+      </div>
+
+      {/* HEADER */}
+      <div className="text-center max-w-4xl mx-auto mb-24 px-6">
+        <span className="uppercase tracking-[0.35em] text-xs text-black/50">
+          {t("projects.eyebrow")}
+        </span>
+
+        <h2 className="mt-6 text-5xl md:text-7xl font-extralight leading-[1.05] tracking-[-0.05em]">
+          {t("projects.titleLine1")}
+          <br />
+          <span className="font-normal">{t("projects.titleLine2")}</span>
+        </h2>
+      </div>
+
+      {/* SLIDER */}
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-10">
+
+        {/* SLIDES */}
+        <div className="overflow-hidden rounded-[2rem]">
+
+          <div
+            className="flex transition-transform duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)]"
+            style={{
+              transform: `translateX(-${current * 100}%)`,
+            }}
+          >
+            {projects.map((p, i) => (
+              <div
+                key={i}
+                className="min-w-full flex flex-col lg:flex-row items-center gap-14 lg:gap-24"
+              >
+                {/* IMAGE */}
+                <div className="relative flex-1 w-full">
+
+                  <div className="absolute inset-0 bg-black/5 blur-[120px] rounded-full scale-110 -z-10" />
+
+                  <div className="overflow-hidden rounded-[2rem]">
+                    <img
+                      src={p.image}
+                      alt={p.title}
+                      className="
+                        w-full
+                        h-[320px] md:h-[500px]
+                        object-cover
+                        hover:scale-105
+                        transition duration-[1800ms]
+                      "
+                    />
+                  </div>
+                </div>
+
+                {/* TEXT */}
+                <div className="flex-1">
+
+                  <div className="flex items-center gap-6 text-xs tracking-[0.3em] text-black/40 uppercase">
+                    <span>{p.category}</span>
+
+                    <span className="w-8 h-[1px] bg-black/20"></span>
+
+                    <span>{p.year}</span>
+                  </div>
+
+                  <h3 className="mt-6 text-4xl md:text-6xl font-light tracking-[-0.04em] leading-[1.05]">
+                    {p.title}
+                  </h3>
+
+                  <p className="mt-8 text-black/60 text-lg leading-relaxed max-w-xl">
+                    {p.description}
+                  </p>
+
+                  {/* BOUTON "VOIR LE PROJET" AMÉLIORÉ */}
+                  {p.lien && (
+                    p.lien.startsWith("http") ? (
+                      <a
+                        href={p.lien}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group relative inline-flex items-center gap-3 px-8 py-4 mt-8 rounded-full border border-black/20 hover:border-black bg-white hover:bg-black transition-all duration-500 shadow-sm hover:shadow-lg"
+                      >
+                        <span className="text-sm font-medium tracking-[0.15em] uppercase text-black/80 group-hover:text-white transition-colors duration-500">
+                          {t("projects.viewProject")}
+                        </span>
+                        <ChevronRight 
+                          size={18} 
+                          className="text-black/60 group-hover:text-white group-hover:translate-x-1 transition-all duration-500" 
+                        />
+                      </a>
+                    ) : (
+                      <Link
+                        to={p.lien}
+                        className="group relative inline-flex items-center gap-3 px-8 py-4 mt-8 rounded-full border border-black/20 hover:border-black bg-white hover:bg-black transition-all duration-500 shadow-sm hover:shadow-lg"
+                      >
+                        <span className="text-sm font-medium tracking-[0.15em] uppercase text-black/80 group-hover:text-white transition-colors duration-500">
+                          {t("projects.viewProject")}
+                        </span>
+                        <ChevronRight 
+                          size={18} 
+                          className="text-black/60 group-hover:text-white group-hover:translate-x-1 transition-all duration-500" 
+                        />
+                      </Link>
+                    )
+                  )}
+
+                  <div className="mt-10 w-20 h-[1px] bg-black/20"></div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* CONTROLS */}
+        <div className="flex items-center justify-between mt-14">
+
+          {/* BUTTONS */}
+          <div className="flex items-center gap-4">
+
+            <button
+              onClick={prevSlide}
+              className="
+                w-14 h-14 rounded-full
+                border border-black/10
+                flex items-center justify-center
+                hover:bg-black hover:text-white
+                transition-all duration-500
+              "
+            >
+              <ChevronLeft size={18} />
+            </button>
+
+            <button
+              onClick={nextSlide}
+              className="
+                w-14 h-14 rounded-full
+                border border-black/10
+                flex items-center justify-center
+                hover:bg-black hover:text-white
+                transition-all duration-500
+              "
+            >
+              <ChevronRight size={18} />
+            </button>
+
+          </div>
+
+          {/* DOTS */}
+          <div className="flex items-center gap-3">
+            {projects.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => setCurrent(i)}
+                className={`
+                  transition-all duration-500 rounded-full
+                  ${
+                    current === i
+                      ? "w-14 h-[3px] bg-black"
+                      : "w-6 h-[3px] bg-black/20 hover:bg-black/40"
+                  }
+                `}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default Project;
